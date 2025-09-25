@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "rimraf ./build && tsc && node ./build/src/app.js"
+    "start": "../node_modules/.bin/rimraf ./build && tsc && node ./build/src/app.js"
   },
   "keywords": [],
   "author": "",
