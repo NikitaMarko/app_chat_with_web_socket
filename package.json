@@ -4,8 +4,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "../node_modules/.bin/rimraf ./build && tsc && node ./build/src/app.js"
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node ./build/app.js",
+    "dev": "ts-node --esm server/src/app.ts"
   },
   "keywords": [],
   "author": "",
